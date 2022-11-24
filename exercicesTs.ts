@@ -35,3 +35,17 @@ const benefice = (prixVente : number, prixFabrication : number) : string => {
         return `Perte de ${-1*prixRevient}€`;
     }
 }
+
+//Exercice 4
+
+/**
+ * Fonction qui renvoie le plus grand nombre d'une liste de trois
+ * @param nombre1 : Le premier nombre à comparer
+ * @param nombre2 : Le second nombre à comparer
+ * @param nombre3 : Le troisième nombre à comparer
+ * @returns Le plus grand des trois nombres
+ */
+const nomPlusGrandNombre = (nombre1 :number, nombre2: number, nombre3: number) : number => {
+    const plusGrandNombre : number = Math.max(nombre1, nombre2, nombre3);
+    return plusGrandNombre;
+}
