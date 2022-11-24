@@ -154,3 +154,18 @@ const calc = (
       return NaN;
   }
 };
+
+//Exercice 8
+
+/**
+ * Fonction qui fait une pyramide horizontale de hauteur maximale donnée en paramètre ecrit en console
+ * @param taille : Hauteur maximale de la pyramide
+ */
+const pyramide = (taille: number): void => {
+  for (let index: number = 1; index <= taille; index++) {
+    console.log("*".repeat(index));
+  }
+  for (let index: number = taille - 1; index >= 1; index--) {
+    console.log("*".repeat(index));
+  }
+};
