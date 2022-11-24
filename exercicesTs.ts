@@ -126,3 +126,31 @@ const validationNote = (moyenne: number): boolean => {
     return true;
   }
 };
+
+//Exercice 7
+
+/**
+ * Fonction qui effectue un calcul entre deux nombre avec un opérateur fourni par l'utilisateur
+ * @param operande1 : Le premier opérande du calcul
+ * @param operateur : L'opérateur du calcul
+ * @param operande2 : Le deuxième opérande du calcul
+ * @returns Le résultat du calcul
+ */
+const calc = (
+  operande1: number,
+  operateur: string,
+  operande2: number
+): number => {
+  switch (operateur) {
+    case "+":
+      return operande1 + operande2;
+    case "-":
+      return operande1 - operande2;
+    case "*":
+      return operande1 * operande2;
+    case "/":
+      return operande1 / operande2;
+    default:
+      return NaN;
+  }
+};
