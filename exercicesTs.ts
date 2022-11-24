@@ -49,3 +49,16 @@ const nomPlusGrandNombre = (nombre1 :number, nombre2: number, nombre3: number) :
     const plusGrandNombre : number = Math.max(nombre1, nombre2, nombre3);
     return plusGrandNombre;
 }
+
+//Exercice 5
+
+
+/**
+ * Fonction qui renvoie le plus grand nombre d'une liste de taille indéfinie
+ * @param nums : Tableau de taille indéfini contenant la liste des nombres à comparer
+ * @returns Le plus grand des nombres contenus dans le tableau
+ */
+const nomPlusGrandNombreTableau = (...nums : number[]) : number =>{
+    const plusGrandNombre :number = Math.max(...nums);
+    return plusGrandNombre;
+}
